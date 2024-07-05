@@ -93,6 +93,7 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-database-postgresql</artifactId>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
@@ -111,6 +112,8 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.0</version>
 		</dependency>
+=======
+>>>>>>> 01268f4e406ec7e3ef33f388813b6f6ff3d61c24
 	</dependencies>
 
 	<build>
