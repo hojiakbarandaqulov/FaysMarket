@@ -14,6 +14,8 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @EnableWebSecurity
 @EnableMethodSecurity(prePostEnabled = true)
 @Component
@@ -59,7 +61,6 @@ public class SecurityConfig {
                     .requestMatchers(("/auth/verification/**")).permitAll()
                     .requestMatchers("/auth/login").permitAll()
                     .requestMatchers("/auth/registration").permitAll()
-                    .requestMatchers("/tag/any/**").permitAll()
                     .anyRequest()
                     .authenticated();
         });

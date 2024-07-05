@@ -1,21 +1,42 @@
-### create profile
+###
 POST http://localhost:8080/profile/adm/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk2NDMwNDEsImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsInVzZXJuYW1lIjoiaG9qaWFrYmFyYW5kYXVsb3Y1QGdtYWlsLmNvbSIsImV4cCI6MTcxOTk4ODY0MSwiaXNzIjoiWW91dHViZSJ9.zG1HufJvesDIhZ41_NqoPvuTEohwxkJ0n9AchzZV68hmYFPIW-EJpNn7TUirYElYCaqb5DsdQvzeQErZENDlWg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
 
 {
-  "name": "Ali",
-  "surname": "Alijon",
-  "email": "alish@gmail.com",
-  "role" : "ROLE_USER"
+  "name": "Momin",
+  "surname": "Ismoilov",
+  "phone": "+998950292125",
+  "password": "12345",
+  "status": "ACTIVE",
+  "role": "ROLE_USER"
 }
 
-### change password
-POST http://localhost:8080/profile/change/password
+
+### Profile update
+PUT http://localhost:8080/profile/adm/current/6
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk2Njg3NzYsImlkIjoxMiwicm9sZSI6IlJPTEVfVVNFUiIsInVzZXJuYW1lIjoiYWtvYmlycW9kaXJpeUBnbWFpbC5jb20iLCJleHAiOjE3MjAwMTQzNzYsImlzcyI6IllvdXR1YmUifQ._-jbH4IZfy3GjQqe7nlJtuo0OT1UEf7-fJbIAueRQUAsMjJaJJsHNhU0c-s8qS5o1T7fliQxsMRO4g4MUVcF4g
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
 
 {
-  "oldPassword": "12345",
-  "newPassword": "54321"
+  "name": "Jasur",
+  "surname": "Ismatullayev"
 }
+
+### update
+PUT http://localhost:8080/profile/adm/update/6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
+
+{
+  "name": "Momin",
+  "surname": "Ismoilov",
+  "phone": "+998950292125",
+  "password": "12345",
+  "status": "ACTIVE",
+  "role": "ROLE_USER"
+}
+
+### pagination
+GET http://localhost:8080/profile/adm/profilePagination?page=1&size=3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q

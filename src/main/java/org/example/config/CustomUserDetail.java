@@ -1,5 +1,6 @@
 package org.example.config;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.example.entity.ProfileEntity;
 import org.example.entity.ProfileEntity;
@@ -11,15 +12,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
-
+@AllArgsConstructor
 @Getter
 public class CustomUserDetail implements UserDetails {
 
-    private final ProfileEntity profile;
+    private  ProfileEntity profile;
 
-    public CustomUserDetail(ProfileEntity profile) {
-        this.profile = profile;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

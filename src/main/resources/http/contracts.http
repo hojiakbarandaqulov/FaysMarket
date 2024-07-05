@@ -1,0 +1,16 @@
+###
+POST http://localhost:8080/contracts/contractCreate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAzMzYzNjAsImlkIjo3LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk5NDc2OTcwIiwiZXhwIjoxNzIwNjgxOTYwLCJpc3MiOiJGYXlzTWFya2V0In0.W0W6h6W3YVCOjN6QpYCr1a9hm1TwLkUuW8s5dGDDz0ehmixptz1pwk0kp26UGFmiu3LHkvfh8IBY-QtUXNw55Q
+
+{
+  "productName": "phone",
+  "name": "Mominjon",
+  "surname": "Mominov",
+  "scarf": "Musoyevich",
+  "productPrice": 3000000,
+  "monthlyPayment": 250000,
+  "phone": "+998999476970",
+  "theRestIndebtedness": 0,
+  "paymentDate": ""
+}

@@ -27,9 +27,6 @@ public class ProfileEntity {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "photo")
-    private Integer photo;
-
     @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private ProfileRole role;
