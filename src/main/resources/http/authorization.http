@@ -1,0 +1,31 @@
+### Registration
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+Accept-Language:EN
+
+{
+  "name": "Muzaffar",
+  "surname": "Andaqulov",
+  "phone": "+998995092376",
+  "password": "1234"
+}
+
+
+### Login
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "phone": "+998995092376",
+  "password": "1234"
+}
+
+
+### Verification
+GET http://localhost:8080/auth/verification/5
+Accept-Language: EN
+
+
+###  registration resend
+GET http://localhost:8080/auth/registration/resend/+998995092376
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
