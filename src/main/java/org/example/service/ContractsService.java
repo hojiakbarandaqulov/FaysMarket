@@ -6,6 +6,7 @@ import org.example.repository.ContractsRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Service
 public class ContractsService {
@@ -24,8 +25,7 @@ public class ContractsService {
         contractsEntity.setProductPrice(createDTO.getProductPrice());
         contractsEntity.setMonthlyPayment(createDTO.getMonthlyPayment());
         contractsEntity.setPhone(createDTO.getPhone());
-        contractsEntity.setTheRestIndebtedness(createDTO.getTheRestIndebtedness());
-        contractsEntity.setPaymentDate(LocalDate.now().plusDays(30));
+        contractsEntity.setTimeDayMonthYear(LocalDateTime.now());
         contractsRepository.save(contractsEntity);
         return ToDTO(contractsEntity);
     }
@@ -39,8 +39,7 @@ public class ContractsService {
         createDTO.setProductPrice(entity.getProductPrice());
         createDTO.setMonthlyPayment(entity.getMonthlyPayment());
         createDTO.setPhone(entity.getPhone());
-        createDTO.setTheRestIndebtedness(entity.getTheRestIndebtedness());
-        createDTO.setPaymentDate(entity.getPaymentDate());
+        createDTO.setTimeDayMonthYear(entity.getTimeDayMonthYear());
         return createDTO;
     }
 }

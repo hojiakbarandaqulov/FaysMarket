@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @Data
 public class ContractCreateDTO {
     private String productName;
@@ -14,5 +16,5 @@ public class ContractCreateDTO {
     private Double monthlyPayment;
     private String phone;
     private Double theRestIndebtedness;
-    private LocalDate paymentDate=LocalDate.now();
+    private LocalDateTime timeDayMonthYear;
 }

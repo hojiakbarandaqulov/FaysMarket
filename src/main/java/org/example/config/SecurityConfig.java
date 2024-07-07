@@ -61,6 +61,7 @@ public class SecurityConfig {
                     .requestMatchers(("/auth/verification/**")).permitAll()
                     .requestMatchers("/auth/login").permitAll()
                     .requestMatchers("/auth/registration").permitAll()
+                    .requestMatchers("/profile/**").permitAll()
                     .anyRequest()
                     .authenticated();
         });

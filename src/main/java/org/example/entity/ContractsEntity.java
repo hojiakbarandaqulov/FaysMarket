@@ -2,8 +2,13 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.example.service.converter.LocalDateTimeConverter;
+import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 @Data
 @Entity
 @Table(name = "contracts")
@@ -24,7 +29,6 @@ public class ContractsEntity {
     @Column(name = "scarf")
     private String scarf;
 
-
     @Column(name = "contract_life_time")
     private LocalDate contractLifeTime=LocalDate.now();
 
@@ -37,10 +41,8 @@ public class ContractsEntity {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "rest_indebtedness")
-    private Double theRestIndebtedness;
+    @Convert(converter = LocalDateTimeConverter.class)
+    private LocalDateTime timeDayMonthYear;
 
-    @Column(name = "payment_date")
-    private LocalDate paymentDate=LocalDate.now().plusDays(30);
 
 }

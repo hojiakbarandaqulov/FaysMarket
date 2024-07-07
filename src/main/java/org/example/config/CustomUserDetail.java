@@ -18,7 +18,6 @@ public class CustomUserDetail implements UserDetails {
 
     private  ProfileEntity profile;
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<SimpleGrantedAuthority> roleList = new LinkedList<>();

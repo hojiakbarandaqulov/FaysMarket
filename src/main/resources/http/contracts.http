@@ -12,5 +12,5 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAzMzYzNjAsImlkIjo3LCJyb
   "monthlyPayment": 250000,
   "phone": "+998999476970",
   "theRestIndebtedness": 0,
-  "paymentDate": ""
+  "timeDayMonthYear": "2024-07-08T13:28:36.598020100"
 }
