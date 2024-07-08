@@ -10,16 +10,14 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 @Slf4j
-@RequestMapping("/profile")
+@RequestMapping("/api/v1/profile")
 @RestController
 public class ProfileController {
-
     private final ProfileService profileService;
 
     public ProfileController(ProfileService profileService) {
         this.profileService = profileService;
     }
-
 
     @PostMapping("/adm/create")
     public ResponseEntity<ProfileDTO> create(@Valid @RequestBody ProfileCreateDTO profileDTO) {
@@ -27,16 +25,9 @@ public class ProfileController {
         return ResponseEntity.ok().body(response);
     }
 
-    @PutMapping("/adm/current/{id}")
+    @PutMapping("/adm/update/{id}")
     public ResponseEntity<Boolean> updateUser(@PathVariable("id") Integer id, @RequestBody ProfileUpdateDTO profile) {
         profileService.updateUser(id, profile);
-        return ResponseEntity.ok().body(true);
-    }
-
-    @PutMapping("/adm/update/{id}")
-    public ResponseEntity<Boolean> update(@PathVariable("id") Integer id,
-                                          @Valid @RequestBody ProfileCreateDTO profile) {
-        profileService.update(id, profile);
         return ResponseEntity.ok().body(true);
     }
 
@@ -47,10 +38,9 @@ public class ProfileController {
         return ResponseEntity.ok().body(typeList);
     }
 
-    @DeleteMapping("/adm/delete/{id}")
-    public ResponseEntity<Boolean> delete(@PathVariable("id") Integer id,
-                                          @RequestHeader("Authorization") String token) {
-        profileService.deleteId(id);
-        return ResponseEntity.ok().body(true);
+    @PutMapping("/adm/delete/{id}")
+    public ResponseEntity<Boolean> delete(@PathVariable("id") Integer id) {
+        Boolean response = profileService.deleteId(id);
+        return ResponseEntity.ok().body(response);
     }
 }

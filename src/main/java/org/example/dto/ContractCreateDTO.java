@@ -9,12 +9,10 @@ import java.time.LocalDateTime;
 @Data
 public class ContractCreateDTO {
     private String productName;
-    private String name;
-    private String surname;
-    private String scarf;
+    private String contractLifeTime;
     private Double productPrice;
     private Double monthlyPayment;
     private String phone;
-    private Double theRestIndebtedness;
+
     private LocalDateTime timeDayMonthYear;
 }

@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.utils.MD5Util;
 import org.flywaydb.core.Flyway;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;

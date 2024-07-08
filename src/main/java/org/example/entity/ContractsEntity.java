@@ -2,7 +2,6 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.example.service.converter.LocalDateTimeConverter;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import java.time.LocalDate;
@@ -40,9 +39,5 @@ public class ContractsEntity {
 
     @Column(name = "phone")
     private String phone;
-
-    @Convert(converter = LocalDateTimeConverter.class)
-    private LocalDateTime timeDayMonthYear;
-
 
 }

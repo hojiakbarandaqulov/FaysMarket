@@ -31,62 +31,56 @@ import java.util.Optional;
 public class AuthorizationService {
 
     private final ProfileRepository profileRepository;
-    private final ResourceBundleMessageSource resourceBundleMessageSource;
     private final SmsHistoryService smsHistoryService;
     private final SmsService smsService;
 
     public AuthorizationService(ProfileRepository profileRepository, ResourceBundleMessageSource resourceBundleMessageSource, SmsHistoryService smsHistoryService, SmsService smsService) {
         this.profileRepository = profileRepository;
-        this.resourceBundleMessageSource = resourceBundleMessageSource;
         this.smsHistoryService = smsHistoryService;
         this.smsService = smsService;
     }
 
-    public String registration(RegistrationDTO dto, LanguageEnum language) {
+    public String registration(RegistrationDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(dto.getPhone());
         if (optional.isPresent()) {
-            log.warn("Phone already exists email => {}", dto.getPhone());
-            String message = resourceBundleMessageSource.getMessage("phone.exists", null, new Locale(language.name()));
-            throw new AppBadException(message);
+            log.error("phone exists");
+            throw new AppBadException("Phone exists");
         }
         ProfileEntity entity = new ProfileEntity();
-        entity.setName(dto.getName());
-        entity.setSurname(dto.getSurname());
         entity.setPhone(dto.getPhone());
         entity.setPassword(MD5Util.getMD5(dto.getPassword()));
         entity.setCreatedDate(LocalDateTime.now());
         entity.setRole(ProfileRole.ROLE_USER);
         entity.setStatus(ProfileStatus.REGISTRATION);
         profileRepository.save(entity);
-        // send email
+
         sendRegistrationPhone(entity.getId(), dto.getPhone());
         smsService.sendSms(dto.getPhone());
-        return resourceBundleMessageSource.getMessage("email.registration.verify", null, new Locale(language.name()));
+        return "To complete your registration please verify your phone";
     }
 
-    public String authorizationVerification(Integer userId, LanguageEnum language) {
+    public String authorizationVerification(Integer userId) {
         Optional<ProfileEntity> optional = profileRepository.findById(userId);
         if (optional.isEmpty()) {
-            log.warn("User not found => {}", userId);
-            String message = resourceBundleMessageSource.getMessage("user.not.found", null, new Locale(language.name()));
-            throw new AppBadException(message);
+            log.error("profile not found");
+            throw new AppBadException("User not found");
         }
 
         ProfileEntity entity = optional.get();
         if (!entity.getVisible() || !entity.getStatus().equals(ProfileStatus.REGISTRATION)) {
-            String message = resourceBundleMessageSource.getMessage("registration.not.completed", null, new Locale(language.name()));
-            throw new AppBadException(message);
+            throw new AppBadException("Registration not completed");
         }
 
         profileRepository.updateStatus(userId, ProfileStatus.ACTIVE);
-        return resourceBundleMessageSource.getMessage("Success", null, new Locale(language.name()));
+        return "Success";
     }
 
-    public AuthorizationResponseDTO login(LoginDTO dto, LanguageEnum language) {
+    public AuthorizationResponseDTO login(LoginDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndPasswordAndVisibleIsTrue(
                 dto.getPhone(),
                 MD5Util.getMD5(dto.getPassword()));
         if (optional.isEmpty()) {
+            log.error("Login failed");
             throw new AppBadException("User not found");
         }
         ProfileEntity entity = optional.get();
@@ -96,14 +90,12 @@ public class AuthorizationService {
 
         AuthorizationResponseDTO responseDTO = new AuthorizationResponseDTO();
         responseDTO.setId(entity.getId());
-        responseDTO.setName(entity.getName());
-        responseDTO.setSurname(entity.getSurname());
         responseDTO.setRole(entity.getRole());
         responseDTO.setJwt(JwtUtil.encode(responseDTO.getId(), entity.getPhone(), responseDTO.getRole()));
         return responseDTO;
     }
 
-    public String registrationResendPhone(String phone, LanguageEnum language) {
+    public String registrationResendPhone(String phone) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(phone);
         if (optional.isEmpty()) {
             throw new AppBadException("Phone not exists");
@@ -122,6 +114,7 @@ public class AuthorizationService {
         String url = "http://localhost:8080/auth/verification/" + profileId;
         String text = String.format(RandomUtil.getRandomSmsCode(), url);
         smsHistoryService.crete(phone, text);
-        smsService.sendSms(phone);// create history
+        smsService.sendSms(phone);
     }
 }
+

@@ -1,31 +1,26 @@
 ### Registration
-POST http://localhost:8080/auth/registration
+POST http://localhost:8080/api/v1/authorization/registration
 Content-Type: application/json
-Accept-Language:EN
 
 {
-  "name": "Muzaffar",
-  "surname": "Andaqulov",
-  "phone": "+998995092376",
+  "phone": "+998942702363",
   "password": "1234"
 }
 
-
 ### Login
-POST http://localhost:8080/auth/login
+POST http://localhost:8080/api/v1/authorization/login
 Content-Type: application/json
 
 {
-  "phone": "+998995092376",
+  "phone": "+998942702363",
   "password": "1234"
 }
 
 
 ### Verification
-GET http://localhost:8080/auth/verification/5
-Accept-Language: EN
+GET http://localhost:8080/api/v1/authorization/verification/1
 
 
 ###  registration resend
-GET http://localhost:8080/auth/registration/resend/+998995092376
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAzMzYzNjAsImlkIjo3LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk5NDc2OTcwIiwiZXhwIjoxNzIwNjgxOTYwLCJpc3MiOiJGYXlzTWFya2V0In0.W0W6h6W3YVCOjN6QpYCr1a9hm1TwLkUuW8s5dGDDz0ehmixptz1pwk0kp26UGFmiu3LHkvfh8IBY-QtUXNw55Q
+GET http://localhost:8080/api/v1/authorization/registration/resend/+998942702363
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg

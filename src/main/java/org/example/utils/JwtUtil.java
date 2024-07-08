@@ -53,5 +53,4 @@ public static String encode(Integer profileId, String username, ProfileRole role
         String jwt = str[1];
         return JwtUtil.decode(jwt);
     }
-
 }

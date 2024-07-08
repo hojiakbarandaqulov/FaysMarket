@@ -1,42 +1,30 @@
 ###
-POST http://localhost:8080/profile/adm/create
+POST http://localhost:8080/api/v1/profile/adm/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
 
 {
-  "name": "Momin",
-  "surname": "Ismoilov",
-  "phone": "+998950292125",
+  "phone": "+998995092376",
   "password": "12345",
   "status": "ACTIVE",
   "role": "ROLE_USER"
 }
-
 
 ### Profile update
-PUT http://localhost:8080/profile/adm/current/6
+PUT http://localhost:8080/api/v1/profile/adm/update/1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
 
 {
-  "name": "Jasur",
-  "surname": "Ismatullayev"
-}
-
-### update
-PUT http://localhost:8080/profile/adm/update/6
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
-
-{
-  "name": "Momin",
-  "surname": "Ismoilov",
-  "phone": "+998950292125",
-  "password": "12345",
-  "status": "ACTIVE",
-  "role": "ROLE_USER"
+ "password": "1234"
 }
 
 ### pagination
-GET http://localhost:8080/profile/adm/profilePagination?page=1&size=3
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAxNzQyNzcsImlkIjo1LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk1MDkyMzc2IiwiZXhwIjoxNzIwNTE5ODc3LCJpc3MiOiJGYXlzTWFya2V0In0.Cp1jVXJ3VTO1_2isxs0rpav8JZcmsln_gsStyVb7LidUFVtM3zBIIF29oYUR19q7iXdB10BzLrzWo-kC9X988Q
+GET http://localhost:8080/api/v1/profile/adm/profilePagination?page=1&size=3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
+
+### delete profile
+PUT http://localhost:8080/api/v1/profile/adm/delete/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
+
+

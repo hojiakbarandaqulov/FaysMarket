@@ -21,16 +21,12 @@ public class ProfileService {
 
     private final ProfileRepository profileRepository;
 
-
-
     public ProfileService(ProfileRepository profileRepository) {
         this.profileRepository = profileRepository;
     }
 
     public ProfileDTO create(ProfileCreateDTO profileDTO) {
         ProfileEntity entity = new ProfileEntity();
-        entity.setName(profileDTO.getName());
-        entity.setSurname(profileDTO.getSurname());
         entity.setPhone(profileDTO.getPhone());
         entity.setPassword(MD5Util.getMD5(profileDTO.getPassword()));
         entity.setStatus(profileDTO.getStatus());
@@ -39,23 +35,9 @@ public class ProfileService {
         return profileToDTO(entity);
     }
 
-    public Boolean update(Integer id,ProfileCreateDTO profile) {
-        ProfileEntity profileEntity = get(id);
-        profileEntity.setName(profile.getName());
-        profileEntity.setSurname(profile.getSurname());
-        profileEntity.setPhone(profile.getPhone());
-        profileEntity.setPassword(MD5Util.getMD5(profile.getPassword()));
-        profileEntity.setStatus(profile.getStatus());
-        profileEntity.setRole(profile.getRole());
-        profileRepository.save(profileEntity);
-        return true;
-    }
-
-
     public Boolean updateUser(Integer id, ProfileUpdateDTO profileUser) {
         ProfileEntity profileEntity = get(id);
-        profileEntity.setName(profileUser.getName());
-        profileEntity.setSurname(profileUser.getSurname());
+        profileEntity.setPassword(MD5Util.getMD5(profileUser.getPassword()));
         profileRepository.save(profileEntity);
         return true;
     }
@@ -63,8 +45,6 @@ public class ProfileService {
     public ProfileDTO profileToDTO(ProfileEntity entity) {
         ProfileDTO profileDTO = new ProfileDTO();
         profileDTO.setId(entity.getId());
-        profileDTO.setName(entity.getName());
-        profileDTO.setSurname(entity.getSurname());
         profileDTO.setPhone(entity.getPhone());
         profileDTO.setPassword(entity.getPassword());
         profileDTO.setStatus(entity.getStatus());
@@ -94,7 +74,9 @@ public class ProfileService {
     }
 
     public Boolean deleteId(Integer id) {
-        profileRepository.deleteById(id);
+        ProfileEntity profile=get(id);
+        profile.setVisible(false);
+        profileRepository.save(profile);
         return true;
     }
 }

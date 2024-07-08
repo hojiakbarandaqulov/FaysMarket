@@ -19,13 +19,9 @@ public class ContractsService {
     public ContractCreateDTO create(ContractCreateDTO createDTO) {
         ContractsEntity contractsEntity=new ContractsEntity();
         contractsEntity.setProductName(createDTO.getProductName());
-        contractsEntity.setName(createDTO.getName());
-        contractsEntity.setSurname(createDTO.getSurname());
-        contractsEntity.setScarf(createDTO.getScarf());
         contractsEntity.setProductPrice(createDTO.getProductPrice());
         contractsEntity.setMonthlyPayment(createDTO.getMonthlyPayment());
         contractsEntity.setPhone(createDTO.getPhone());
-        contractsEntity.setTimeDayMonthYear(LocalDateTime.now());
         contractsRepository.save(contractsEntity);
         return ToDTO(contractsEntity);
     }
@@ -33,13 +29,9 @@ public class ContractsService {
     public ContractCreateDTO ToDTO(ContractsEntity entity) {
         ContractCreateDTO createDTO=new ContractCreateDTO();
         createDTO.setProductName(entity.getProductName());
-        createDTO.setName(entity.getName());
-        createDTO.setSurname(entity.getSurname());
-        createDTO.setScarf(entity.getScarf());
         createDTO.setProductPrice(entity.getProductPrice());
         createDTO.setMonthlyPayment(entity.getMonthlyPayment());
         createDTO.setPhone(entity.getPhone());
-        createDTO.setTimeDayMonthYear(entity.getTimeDayMonthYear());
         return createDTO;
     }
 }

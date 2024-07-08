@@ -9,10 +9,6 @@ import org.example.enums.ProfileRole;
 public class AuthorizationResponseDTO {
     @NotNull
     private Integer id;
-    @NotBlank(message = "name required")
-    private String name;
-    @NotBlank(message = "surname required")
-    private String surname;
     @NotBlank(message = "role required")
     private ProfileRole role;
     private String jwt;

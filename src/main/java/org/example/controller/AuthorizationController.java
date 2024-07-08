@@ -14,10 +14,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.web.bind.annotation.*;
 
-@Slf4j
 @EnableMethodSecurity(prePostEnabled = true)
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/authorization")
 @Tag(name = "Auth Controller", description = "Api list for authorization, registration and other ....")
 public class AuthorizationController {
     private final AuthorizationService authorizationService;
@@ -28,34 +27,26 @@ public class AuthorizationController {
 
     @PostMapping("/registration")
     @Operation(summary = "Registration", description = "Api for profile registration")
-    public ResponseEntity<String> registration(@Valid @RequestBody RegistrationDTO registrationDTO,
-                                               @RequestHeader(value = "Accept-Language", defaultValue = "UZ") LanguageEnum language){
-        log.info("Registration name = {} email = {}",registrationDTO.getName(), registrationDTO.getPhone());
-        String registration = authorizationService.registration(registrationDTO, language);
+    public ResponseEntity<String> registration(@Valid @RequestBody RegistrationDTO registrationDTO){
+        String registration = authorizationService.registration(registrationDTO);
         return ResponseEntity.ok().body(registration);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthorizationResponseDTO> login(@Valid @RequestBody LoginDTO loginDTO,
-                                                          @RequestHeader(value = "Accept-Language", defaultValue = "UZ") LanguageEnum language){
-        AuthorizationResponseDTO login = authorizationService.login(loginDTO,language);
-        log .info("Login email = {} password = {}",loginDTO.getPhone(), loginDTO.getPassword());
+    public ResponseEntity<AuthorizationResponseDTO> login(@Valid @RequestBody LoginDTO loginDTO){
+        AuthorizationResponseDTO login = authorizationService.login(loginDTO);
         return ResponseEntity.ok().body(login);
     }
 
     @GetMapping("/verification/{userId}")
-    public ResponseEntity<String> verification(@PathVariable("userId") Integer userId,
-                                               @RequestHeader(value = "Accept-Language",defaultValue = "UZ")LanguageEnum language) {
-        String body = authorizationService.authorizationVerification(userId, language);
-        log.info("verification userId = {} email = {}",userId,body);
+    public ResponseEntity<String> verification(@PathVariable("userId") Integer userId) {
+        String body = authorizationService.authorizationVerification(userId);
         return ResponseEntity.ok().body(body);
     }
 
     @GetMapping("/registration/resend/{phone}")
-    public ResponseEntity<String> registrationResend(@PathVariable("phone") String phone,
-                                                     @RequestHeader(value = "Accept-Language", defaultValue = "UZ")LanguageEnum languageEnum) {
-        String body = authorizationService.registrationResendPhone(phone,languageEnum);
-        log.info("registration userId = {} phone = {}",phone,body);
+    public ResponseEntity<String> registrationResend(@PathVariable("phone") String phone) {
+        String body = authorizationService.registrationResendPhone(phone);
         return ResponseEntity.ok().body(body);
     }
 }
