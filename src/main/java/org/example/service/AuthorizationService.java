@@ -7,6 +7,7 @@ import org.example.dto.auth.LoginDTO;
 import org.example.dto.auth.RegistrationDTO;
 import org.example.dto.auth.LoginDTO;
 import org.example.dto.auth.RegistrationDTO;
+import org.example.dto.errorMsg.ErrorMsg;
 import org.example.entity.ProfileEntity;
 import org.example.entity.ProfileEntity;
 import org.example.enums.LanguageEnum;
@@ -19,6 +20,7 @@ import org.example.service.history.SmsService;
 import org.example.utils.JwtUtil;
 import org.example.utils.MD5Util;
 import org.example.utils.RandomUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +36,7 @@ public class AuthorizationService {
     private final SmsHistoryService smsHistoryService;
     private final SmsService smsService;
 
-    public AuthorizationService(ProfileRepository profileRepository, ResourceBundleMessageSource resourceBundleMessageSource, SmsHistoryService smsHistoryService, SmsService smsService) {
+    public AuthorizationService(ProfileRepository profileRepository, SmsHistoryService smsHistoryService, SmsService smsService) {
         this.profileRepository = profileRepository;
         this.smsHistoryService = smsHistoryService;
         this.smsService = smsService;
