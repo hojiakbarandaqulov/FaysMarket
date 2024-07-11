@@ -1,13 +1,13 @@
 package org.example.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.dto.ApiResponse;
 import org.example.dto.ProfileDTO;
 import org.example.dto.auth.AuthorizationResponseDTO;
 import org.example.dto.auth.LoginDTO;
 import org.example.dto.auth.RegistrationDTO;
 import org.example.dto.auth.LoginDTO;
 import org.example.dto.auth.RegistrationDTO;
-import org.example.dto.errorMsg.ErrorMsg;
 import org.example.entity.ProfileEntity;
 import org.example.entity.ProfileEntity;
 import org.example.enums.LanguageEnum;
@@ -42,7 +42,7 @@ public class AuthorizationService {
         this.smsService = smsService;
     }
 
-    public String registration(RegistrationDTO dto) {
+    public ApiResponse<?> registration(RegistrationDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(dto.getPhone());
         if (optional.isPresent()) {
             log.error("phone exists");
@@ -58,10 +58,10 @@ public class AuthorizationService {
 
         sendRegistrationPhone(entity.getId(), dto.getPhone());
         smsService.sendSms(dto.getPhone());
-        return "To complete your registration please verify your phone";
+        return ApiResponse.ok("To complete your registration please verify your phone");
     }
 
-    public String authorizationVerification(Integer userId) {
+    public ApiResponse<?> authorizationVerification(Integer userId) {
         Optional<ProfileEntity> optional = profileRepository.findById(userId);
         if (optional.isEmpty()) {
             log.error("profile not found");
@@ -70,15 +70,14 @@ public class AuthorizationService {
 
         ProfileEntity entity = optional.get();
         if (!entity.getVisible() || !entity.getStatus().equals(ProfileStatus.REGISTRATION)) {
-            log.error("registration not completed");
+            log.error("Registration not completed");
             throw new AppBadException("Registration not completed");
         }
-
         profileRepository.updateStatus(userId, ProfileStatus.ACTIVE);
-        return "Success";
+        return ApiResponse.ok("Success");
     }
 
-    public AuthorizationResponseDTO login(LoginDTO dto) {
+    public ApiResponse<?> login(LoginDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndPasswordAndVisibleIsTrue(
                 dto.getPhone(),
                 MD5Util.getMD5(dto.getPassword()));
@@ -96,10 +95,10 @@ public class AuthorizationService {
         responseDTO.setId(entity.getId());
         responseDTO.setRole(entity.getRole());
         responseDTO.setJwt(JwtUtil.encode(responseDTO.getId(), entity.getPhone(), responseDTO.getRole()));
-        return responseDTO;
+        return ApiResponse.ok(responseDTO);
     }
 
-    public String registrationResendPhone(String phone) {
+    public ApiResponse<?> registrationResendPhone(String phone) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(phone);
         if (optional.isEmpty()) {
             log.error("phone not found");
@@ -113,7 +112,7 @@ public class AuthorizationService {
         }
         smsHistoryService.checkPhoneLimit(phone);
         sendRegistrationPhone(entity.getId(), phone);
-        return "To complete your registration please verify your phone.";
+        return ApiResponse.ok("To complete your registration please verify your phone.");
     }
 
     public void sendRegistrationPhone(Integer profileId, String phone) {
