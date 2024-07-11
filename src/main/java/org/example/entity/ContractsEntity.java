@@ -40,4 +40,6 @@ public class ContractsEntity {
     @Column(name = "phone")
     private String phone;
 
+    @Column(name = "contract_signed_time")
+    private LocalDateTime contractSignedTime;
 }

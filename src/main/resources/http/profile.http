@@ -16,7 +16,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
 
 {
- "password": "1234"
+  "password": "1234"
 }
 
 ### pagination

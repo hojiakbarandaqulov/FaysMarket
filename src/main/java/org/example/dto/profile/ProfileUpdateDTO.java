@@ -9,4 +9,5 @@ import lombok.Setter;
 public class ProfileUpdateDTO {
     @NotBlank(message = "password required")
     private String password;
+
 }

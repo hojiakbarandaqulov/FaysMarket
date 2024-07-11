@@ -8,6 +8,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FaysMarketApplication {
     public static void main(String[] args) {
         SpringApplication.run(FaysMarketApplication.class, args);
-        System.out.println(MD5Util.getMD5("12345"));
     }
 }

@@ -50,7 +50,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         } catch (JwtException e) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             return;
-        }catch (RuntimeException e) {
+        } catch (RuntimeException e) {
             e.printStackTrace();
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             return;

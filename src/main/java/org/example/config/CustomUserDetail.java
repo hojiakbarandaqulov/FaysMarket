@@ -15,8 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 public class CustomUserDetail implements UserDetails {
-
-    private  ProfileEntity profile;
+    private ProfileEntity profile;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

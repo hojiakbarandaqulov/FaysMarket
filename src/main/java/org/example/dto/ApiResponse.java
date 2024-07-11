@@ -2,32 +2,75 @@ package org.example.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.http.HttpStatus;
 
 @Getter
 @Setter
 public class ApiResponse<T> {
-    private int code; // 1 ok,  -1 error
-    private String message; // message
-    private T data;
+        private String message;
 
-    public ApiResponse(int code, String message) {
-        this.code = code;
-        this.message = message;
-    }
+        private Integer code;
 
-    public ApiResponse(int code, String message, T data) {
-        this.code = code;
-        this.message = message;
-        this.data = data;
-    }
+        private Boolean isError;
 
-    public static ApiResponse build(int code, String message) {
-        ApiResponse apiResponse = new ApiResponse(code, message);
-        return apiResponse;
-    }
+        private T data;
 
-    public static <T> ApiResponse ok(T data) {
-        ApiResponse apiResponse = new ApiResponse(1, null, data);
-        return apiResponse;
+        public ApiResponse() {
+        }
+
+        public ApiResponse(Integer code, Boolean isError) {
+            this.code = code;
+            this.isError = isError;
+            this.data = null;
+        }
+
+        public ApiResponse(String message, Integer code, Boolean isError) {
+            this.message = message;
+            this.code = code;
+            this.isError = isError;
+            this.data = null;
+        }
+
+        public ApiResponse(String message, Integer code) {
+            this.message = message;
+            this.code = code;
+            this.data = null;
+        }
+
+        public ApiResponse(Integer code, Boolean isError, T data) {
+            this.code = code;
+            this.isError = isError;
+            this.data = data;
+        }
+
+        public ApiResponse(String message, Integer code, Boolean isError, T data) {
+            this.message = message;
+            this.code = code;
+            this.isError = isError;
+            this.data = data;
+        }
+
+        public static <T> ApiResponse<T> ok(T data) {
+            return new ApiResponse<T>(200, false, data);
+        }
+
+        public static <T> ApiResponse<T> ok(Boolean isError, T data) {
+            return new ApiResponse<T>(200, false, data);
+        }
+
+        public static <T> ApiResponse<T> ok() {
+            return new ApiResponse<T>(200, false);
+        }
+
+        public static <T> ApiResponse<T> bad(String message) {
+            return new ApiResponse<T>(message, 400, true);
+        }
+
+        public static <T> ApiResponse<T> forbidden(String message) {
+            return new ApiResponse<T>(message, 403, true);
+        }
+
+        public static <T> ApiResponse<T> unAuthorized(String message) {
+            return new ApiResponse<T>(message, 401, true);
+        }
     }
-}

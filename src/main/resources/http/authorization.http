@@ -16,10 +16,8 @@ Content-Type: application/json
   "password": "1234"
 }
 
-
 ### Verification
 GET http://localhost:8080/api/v1/authorization/verification/1
-
 
 ###  registration resend
 GET http://localhost:8080/api/v1/authorization/registration/resend/+998942702363

@@ -2,15 +2,10 @@ package org.example.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.dto.ApiResponse;
-import org.example.dto.ProfileDTO;
 import org.example.dto.auth.AuthorizationResponseDTO;
 import org.example.dto.auth.LoginDTO;
 import org.example.dto.auth.RegistrationDTO;
-import org.example.dto.auth.LoginDTO;
-import org.example.dto.auth.RegistrationDTO;
 import org.example.entity.ProfileEntity;
-import org.example.entity.ProfileEntity;
-import org.example.enums.LanguageEnum;
 import org.example.enums.ProfileRole;
 import org.example.enums.ProfileStatus;
 import org.example.exp.AppBadException;
@@ -20,18 +15,14 @@ import org.example.service.history.SmsService;
 import org.example.utils.JwtUtil;
 import org.example.utils.MD5Util;
 import org.example.utils.RandomUtil;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Locale;
 import java.util.Optional;
 
 @Slf4j
 @Service
 public class AuthorizationService {
-
     private final ProfileRepository profileRepository;
     private final SmsHistoryService smsHistoryService;
     private final SmsService smsService;
@@ -42,7 +33,7 @@ public class AuthorizationService {
         this.smsService = smsService;
     }
 
-    public ApiResponse<?> registration(RegistrationDTO dto) {
+    public ApiResponse<String> registration(RegistrationDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(dto.getPhone());
         if (optional.isPresent()) {
             log.error("phone exists");
@@ -61,7 +52,7 @@ public class AuthorizationService {
         return ApiResponse.ok("To complete your registration please verify your phone");
     }
 
-    public ApiResponse<?> authorizationVerification(Integer userId) {
+    public ApiResponse authorizationVerification(Integer userId) {
         Optional<ProfileEntity> optional = profileRepository.findById(userId);
         if (optional.isEmpty()) {
             log.error("profile not found");
@@ -74,10 +65,10 @@ public class AuthorizationService {
             throw new AppBadException("Registration not completed");
         }
         profileRepository.updateStatus(userId, ProfileStatus.ACTIVE);
-        return ApiResponse.ok("Success");
+        return ApiResponse.ok();
     }
 
-    public ApiResponse<?> login(LoginDTO dto) {
+    public ApiResponse<AuthorizationResponseDTO> login(LoginDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndPasswordAndVisibleIsTrue(
                 dto.getPhone(),
                 MD5Util.getMD5(dto.getPassword()));

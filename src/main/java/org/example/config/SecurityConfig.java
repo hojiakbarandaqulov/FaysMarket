@@ -21,9 +21,7 @@ import java.util.List;
 @Component
 @Configuration
 public class SecurityConfig {
-
     private final CustomUserDetailService customUserDetailService;
-
     private final JwtTokenFilter jwtTokenFilter;
 
     public SecurityConfig(CustomUserDetailService customUserDetailService, JwtTokenFilter jwtTokenFilter) {
@@ -38,7 +36,6 @@ public class SecurityConfig {
         authenticationProvider.setUserDetailsService(customUserDetailService);
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         return authenticationProvider;
-
     }
 
     @Bean

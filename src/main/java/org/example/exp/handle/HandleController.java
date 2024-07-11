@@ -1,4 +1,4 @@
-package org.example.controller.exp;
+package org.example.exp.handle;
 
 
 import org.example.dto.ApiResponse;
@@ -18,14 +18,13 @@ public class HandleController {
 //    }
     @ExceptionHandler({IllegalArgumentException.class, AppBadException.class, AppForbiddenException.class})
     public ResponseEntity<ApiResponse> handle(AppBadException e) {
-        return ResponseEntity.ok(ApiResponse.build(-1, e.getMessage()));
+        return ResponseEntity.ok(ApiResponse.bad(e.getMessage()));
     }
 
   /*  @ExceptionHandler(AppForbiddenException.class)
     public ResponseEntity<String> handler(AppForbiddenException e) {
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
     }*/
-
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<String> handler(RuntimeException e) {
         e.printStackTrace();
