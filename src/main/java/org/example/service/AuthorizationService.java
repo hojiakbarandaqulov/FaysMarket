@@ -68,6 +68,7 @@ public class AuthorizationService {
 
         ProfileEntity entity = optional.get();
         if (!entity.getVisible() || !entity.getStatus().equals(ProfileStatus.REGISTRATION)) {
+            log.error("registration not completed");
             throw new AppBadException("Registration not completed");
         }
 
@@ -80,11 +81,12 @@ public class AuthorizationService {
                 dto.getPhone(),
                 MD5Util.getMD5(dto.getPassword()));
         if (optional.isEmpty()) {
-            log.error("Login failed");
+            log.error("user not found");
             throw new AppBadException("User not found");
         }
         ProfileEntity entity = optional.get();
         if (entity.getStatus().equals(ProfileStatus.ACTIVE)) {
+            log.error("wrong status");
             throw new AppBadException("Wrong status");
         }
 
@@ -98,11 +100,13 @@ public class AuthorizationService {
     public String registrationResendPhone(String phone) {
         Optional<ProfileEntity> optional = profileRepository.findByPhoneAndVisibleTrue(phone);
         if (optional.isEmpty()) {
+            log.error("phone not found");
             throw new AppBadException("Phone not exists");
         }
         ProfileEntity entity = optional.get();
         smsHistoryService.isNotExpiredPhone(entity.getPhone());
         if (!entity.getVisible() || !entity.getStatus().equals(ProfileStatus.REGISTRATION)) {
+            log.error("registration not completed");
             throw new AppBadException("Registration not completed");
         }
         smsHistoryService.checkPhoneLimit(phone);

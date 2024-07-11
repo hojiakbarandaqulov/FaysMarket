@@ -1,39 +1,37 @@
-11 Jul 2024 - 07:52:59.178 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h27m9s412ms581µs500ns).
-11 Jul 2024 - 07:54:26.680 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:54:26.682 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:54:26.767 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:54:28.787 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 21300 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:54:28.798 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:54:29.547 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:54:29.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:54:30.082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:54:30.092 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:54:30.093 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:54:30.149 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:54:30.149 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1320 ms
-11 Jul 2024 - 07:54:30.265 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:54:30.336 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:54:30.380 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:54:30.672 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:54:30.695 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:54:31.181 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c206b14
-11 Jul 2024 - 07:54:31.183 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:54:32.124 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:54:32.202 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:54:32.397 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:54:32.986 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:54:33.020 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:54:33.021 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:54:33.671 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:54:33.681 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 5.204 seconds (process running for 5.717)
-11 Jul 2024 - 07:54:33.819 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:54:34.197 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+11 Jul 2024 - 10:37:58.625 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 15204 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+11 Jul 2024 - 10:37:58.634 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
+11 Jul 2024 - 10:37:59.374 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11 Jul 2024 - 10:37:59.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+11 Jul 2024 - 10:37:59.886 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+11 Jul 2024 - 10:37:59.901 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11 Jul 2024 - 10:37:59.902 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+11 Jul 2024 - 10:37:59.961 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11 Jul 2024 - 10:37:59.961 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+11 Jul 2024 - 10:38:00.075 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11 Jul 2024 - 10:38:00.115 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+11 Jul 2024 - 10:38:00.142 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11 Jul 2024 - 10:38:00.383 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11 Jul 2024 - 10:38:00.402 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11 Jul 2024 - 10:38:00.881 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f52a229
+11 Jul 2024 - 10:38:00.883 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11 Jul 2024 - 10:38:01.818 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11 Jul 2024 - 10:38:01.914 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:38:02.078 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11 Jul 2024 - 10:38:02.582 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11 Jul 2024 - 10:38:02.607 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+11 Jul 2024 - 10:38:02.608 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11 Jul 2024 - 10:38:03.162 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+11 Jul 2024 - 10:38:03.172 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.837 seconds (process running for 5.283)
+11 Jul 2024 - 10:38:03.291 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
+11 Jul 2024 - 10:38:03.616 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:54:34.216 [main] ERROR o.s.boot.SpringApplication - Application run failed
+11 Jul 2024 - 10:38:03.631 [main] ERROR o.s.boot.SpringApplication - Application run failed
 org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
+Migration checksum mismatch for migration version 2
+-> Applied to database : -289570960
+-> Resolved locally    : -1204749394
+Either revert the changes to the migration, or run repair to update the schema history.
 Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
 	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
@@ -59,41 +57,43 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
 	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:54:34.359 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:54:34.359 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:54:34.616 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:54:52.011 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 11536 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:54:52.021 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:54:52.741 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:54:52.817 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:54:53.364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:54:53.374 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:54:53.375 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:54:53.431 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:54:53.432 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1376 ms
-11 Jul 2024 - 07:54:53.551 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:54:53.590 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:54:53.617 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:54:53.849 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:54:53.883 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:54:54.114 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5dacf18d
-11 Jul 2024 - 07:54:54.116 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:54:54.976 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:54:55.080 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:54:55.263 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:54:55.812 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:54:55.857 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:54:55.858 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:54:56.462 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:54:56.478 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.765 seconds (process running for 5.202)
-11 Jul 2024 - 07:54:56.634 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:54:56.775 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+11 Jul 2024 - 10:38:03.811 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:38:03.813 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11 Jul 2024 - 10:38:03.868 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11 Jul 2024 - 10:39:11.833 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 10712 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+11 Jul 2024 - 10:39:11.843 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
+11 Jul 2024 - 10:39:12.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11 Jul 2024 - 10:39:12.629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+11 Jul 2024 - 10:39:13.115 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+11 Jul 2024 - 10:39:13.123 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11 Jul 2024 - 10:39:13.124 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+11 Jul 2024 - 10:39:13.189 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11 Jul 2024 - 10:39:13.190 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+11 Jul 2024 - 10:39:13.301 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11 Jul 2024 - 10:39:13.337 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+11 Jul 2024 - 10:39:13.364 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11 Jul 2024 - 10:39:13.604 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11 Jul 2024 - 10:39:13.633 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11 Jul 2024 - 10:39:13.898 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71316cd7
+11 Jul 2024 - 10:39:13.899 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11 Jul 2024 - 10:39:14.810 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11 Jul 2024 - 10:39:14.904 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:39:15.149 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11 Jul 2024 - 10:39:15.586 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11 Jul 2024 - 10:39:15.619 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+11 Jul 2024 - 10:39:15.620 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11 Jul 2024 - 10:39:16.190 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+11 Jul 2024 - 10:39:16.200 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.667 seconds (process running for 5.09)
+11 Jul 2024 - 10:39:16.565 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
+11 Jul 2024 - 10:39:16.931 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:54:56.792 [main] ERROR o.s.boot.SpringApplication - Application run failed
+11 Jul 2024 - 10:39:16.948 [main] ERROR o.s.boot.SpringApplication - Application run failed
 org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
+Migration checksum mismatch for migration version 2
+-> Applied to database : -289570960
+-> Resolved locally    : -1204749394
+Either revert the changes to the migration, or run repair to update the schema history.
 Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
 	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
@@ -119,486 +119,44 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
 	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:54:57.026 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:54:57.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:54:57.083 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:56:07.142 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 18764 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:56:07.151 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:56:07.845 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:56:07.899 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:56:08.397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:56:08.407 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:56:08.408 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:56:08.464 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:56:08.464 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1282 ms
-11 Jul 2024 - 07:56:08.592 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:56:08.635 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:56:08.662 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:56:08.892 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:56:08.922 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:56:09.184 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cdd31a4
-11 Jul 2024 - 07:56:09.186 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:56:10.137 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:56:10.214 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:56:10.414 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:56:10.900 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:56:10.931 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:56:10.932 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:56:11.480 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:56:11.490 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.653 seconds (process running for 5.111)
-11 Jul 2024 - 07:56:11.652 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:56:12.053 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+11 Jul 2024 - 10:39:17.115 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:39:17.116 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11 Jul 2024 - 10:39:17.153 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11 Jul 2024 - 10:47:19.888 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 11616 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+11 Jul 2024 - 10:47:19.908 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
+11 Jul 2024 - 10:47:20.924 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11 Jul 2024 - 10:47:20.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+11 Jul 2024 - 10:47:21.567 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+11 Jul 2024 - 10:47:21.580 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11 Jul 2024 - 10:47:21.580 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+11 Jul 2024 - 10:47:21.650 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11 Jul 2024 - 10:47:21.651 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1691 ms
+11 Jul 2024 - 10:47:21.804 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11 Jul 2024 - 10:47:21.861 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+11 Jul 2024 - 10:47:21.893 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11 Jul 2024 - 10:47:22.203 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11 Jul 2024 - 10:47:22.229 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11 Jul 2024 - 10:47:22.527 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46994f26
+11 Jul 2024 - 10:47:22.529 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11 Jul 2024 - 10:47:23.608 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11 Jul 2024 - 10:47:23.693 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:47:23.956 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11 Jul 2024 - 10:47:24.658 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11 Jul 2024 - 10:47:24.695 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+11 Jul 2024 - 10:47:24.696 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11 Jul 2024 - 10:47:25.460 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+11 Jul 2024 - 10:47:25.472 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 6.033 seconds (process running for 6.687)
+11 Jul 2024 - 10:47:25.667 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
+11 Jul 2024 - 10:47:25.798 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.053s)
+11 Jul 2024 - 10:47:25.911 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+11 Jul 2024 - 10:47:25.936 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - profile init"
+11 Jul 2024 - 10:47:25.958 [main] INFO  o.f.c.i.s.DefaultSqlScriptExecutor - +--------+
+| setval |
++--------+
+| 3      |
++--------+
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:56:12.073 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:20)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:56:12.263 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:56:12.265 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:56:12.310 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:57:58.552 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 20444 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:57:58.562 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:57:59.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:57:59.375 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:57:59.831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:57:59.840 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:57:59.840 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:57:59.908 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:57:59.910 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
-11 Jul 2024 - 07:58:00.027 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:58:00.067 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:58:00.095 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:58:00.303 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:58:00.329 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:58:00.616 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b50c21
-11 Jul 2024 - 07:58:00.618 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:58:01.541 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:58:01.624 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:58:01.849 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:58:02.386 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:58:02.427 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:58:02.428 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:58:03.069 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:58:03.078 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.826 seconds (process running for 5.257)
-11 Jul 2024 - 07:58:03.199 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:58:03.321 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:58:03.334 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:20)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:58:03.504 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:58:03.506 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:58:03.551 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:58:28.078 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 13224 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:58:28.087 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:58:28.843 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:58:28.892 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:58:29.383 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:58:29.397 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:58:29.398 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:58:29.467 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:58:29.467 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1350 ms
-11 Jul 2024 - 07:58:29.560 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:58:29.598 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:58:29.627 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:58:29.849 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:58:29.869 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:58:30.117 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6106dfb6
-11 Jul 2024 - 07:58:30.119 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:58:31.090 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:58:31.180 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:58:31.362 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:58:31.880 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:58:31.907 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:58:31.907 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:58:32.536 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:58:32.547 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.765 seconds (process running for 5.207)
-11 Jul 2024 - 07:58:32.671 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:58:32.834 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:58:32.855 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:20)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:58:33.063 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:58:33.065 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:58:33.145 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:58:57.511 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 16676 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:58:57.520 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:58:58.337 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:58:58.392 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:58:58.871 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:58:58.879 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:58:58.880 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:58:58.929 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:58:58.929 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1377 ms
-11 Jul 2024 - 07:58:59.027 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:58:59.062 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:58:59.088 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:58:59.308 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:58:59.333 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:58:59.561 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c206b14
-11 Jul 2024 - 07:58:59.562 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:59:00.491 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:59:00.609 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:00.796 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:59:01.314 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:59:01.340 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:59:01.341 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:59:02.012 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:59:02.022 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.809 seconds (process running for 5.244)
-11 Jul 2024 - 07:59:02.164 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:59:02.292 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:59:02.309 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:22)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:59:02.490 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:02.492 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:59:02.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:59:22.342 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 8528 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:59:22.351 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
-11 Jul 2024 - 07:59:23.019 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:59:23.084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:59:23.481 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-11 Jul 2024 - 07:59:23.490 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:59:23.490 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:59:23.547 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:59:23.548 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
-11 Jul 2024 - 07:59:23.645 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:59:23.680 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:59:23.709 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:59:23.925 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:59:23.945 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:59:24.162 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6106dfb6
-11 Jul 2024 - 07:59:24.163 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:59:24.945 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:59:25.255 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:25.444 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:59:25.953 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:59:25.989 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:59:25.991 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:59:26.547 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-11 Jul 2024 - 07:59:26.556 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.514 seconds (process running for 4.946)
-11 Jul 2024 - 07:59:26.676 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.19)
-11 Jul 2024 - 07:59:26.813 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:59:26.826 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:22)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:59:26.999 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:27.000 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:59:27.053 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 07:59:45.938 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 15408 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 07:59:45.947 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
-11 Jul 2024 - 07:59:46.650 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 07:59:46.713 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 07:59:47.207 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-11 Jul 2024 - 07:59:47.217 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 07:59:47.218 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 07:59:47.271 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 07:59:47.272 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1294 ms
-11 Jul 2024 - 07:59:47.416 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 07:59:47.462 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 07:59:47.487 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 07:59:47.739 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 07:59:47.769 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 07:59:47.951 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16b7e04a
-11 Jul 2024 - 07:59:47.954 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 07:59:48.718 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 07:59:48.797 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:48.966 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 07:59:49.515 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 07:59:49.578 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 07:59:49.580 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 07:59:50.156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-11 Jul 2024 - 07:59:50.166 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.525 seconds (process running for 4.95)
-11 Jul 2024 - 07:59:50.298 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
-11 Jul 2024 - 07:59:50.358 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 07:59:50.370 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:21)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 07:59:50.542 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 07:59:50.544 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 07:59:50.550 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 08:27:24.648 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 1316 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 08:27:24.658 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
-11 Jul 2024 - 08:27:25.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 08:27:25.456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 08:27:25.917 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-11 Jul 2024 - 08:27:25.926 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 08:27:25.926 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 08:27:25.992 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 08:27:25.992 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1303 ms
-11 Jul 2024 - 08:27:26.095 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 08:27:26.141 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 08:27:26.170 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 08:27:26.435 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 08:27:26.453 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 08:27:26.594 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a99c42c
-11 Jul 2024 - 08:27:26.595 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 08:27:27.360 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 08:27:27.406 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 08:27:27.562 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 08:27:28.119 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 08:27:28.144 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 08:27:28.146 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 08:27:28.710 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-11 Jul 2024 - 08:27:28.720 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.365 seconds (process running for 4.892)
-11 Jul 2024 - 08:27:28.839 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
-11 Jul 2024 - 08:27:28.883 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 08:27:28.896 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:21)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 08:27:29.087 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 08:27:29.088 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 08:27:29.091 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-11 Jul 2024 - 08:27:46.031 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 10244 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
-11 Jul 2024 - 08:27:46.041 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
-11 Jul 2024 - 08:27:46.745 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11 Jul 2024 - 08:27:46.798 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
-11 Jul 2024 - 08:27:47.247 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-11 Jul 2024 - 08:27:47.255 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-11 Jul 2024 - 08:27:47.255 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-11 Jul 2024 - 08:27:47.310 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-11 Jul 2024 - 08:27:47.311 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1232 ms
-11 Jul 2024 - 08:27:47.407 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11 Jul 2024 - 08:27:47.443 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-11 Jul 2024 - 08:27:47.469 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11 Jul 2024 - 08:27:47.737 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11 Jul 2024 - 08:27:47.756 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-11 Jul 2024 - 08:27:47.874 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b4829aa
-11 Jul 2024 - 08:27:47.875 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-11 Jul 2024 - 08:27:48.674 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11 Jul 2024 - 08:27:48.718 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 08:27:48.882 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-11 Jul 2024 - 08:27:49.382 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11 Jul 2024 - 08:27:49.408 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-11 Jul 2024 - 08:27:49.409 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-11 Jul 2024 - 08:27:49.981 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-11 Jul 2024 - 08:27:49.991 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.259 seconds (process running for 4.686)
-11 Jul 2024 - 08:27:50.107 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
-11 Jul 2024 - 08:27:50.148 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-11 Jul 2024 - 08:27:50.165 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected applied migration not resolved locally: 2.
-If you removed this migration intentionally, run repair to mark the migration as deleted.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:160)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:205)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
-	at org.example.service.FlywayStarterService.run(FlywayStarterService.java:21)
-	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
-	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
-	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
-	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
-	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at org.example.FaysMarketApplication.main(FaysMarketApplication.java:10)
-11 Jul 2024 - 08:27:50.367 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11 Jul 2024 - 08:27:50.369 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11 Jul 2024 - 08:27:50.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11 Jul 2024 - 10:47:26.041 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v2 (execution time 00:00.035s)
+11 Jul 2024 - 10:49:24.727 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11 Jul 2024 - 10:49:24.730 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11 Jul 2024 - 10:49:24.797 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

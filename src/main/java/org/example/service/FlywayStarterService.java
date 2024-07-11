@@ -1,6 +1,5 @@
 package org.example.service;
 
-import org.example.utils.MD5Util;
 import org.flywaydb.core.Flyway;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
@@ -16,8 +15,8 @@ public class FlywayStarterService implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws RuntimeException {
-        System.out.println("FlywayStarterService");
+    public void run(String... args) throws Exception {
+//        System.out.println("FlywayStarterService");
         Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
     }
 }
