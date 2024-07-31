@@ -1,13 +1,13 @@
 ###
 POST http://localhost:8080/api/v1/contracts/contractCreate
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAzMzYzNjAsImlkIjo3LCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTk5NDc2OTcwIiwiZXhwIjoxNzIwNjgxOTYwLCJpc3MiOiJGYXlzTWFya2V0In0.W0W6h6W3YVCOjN6QpYCr1a9hm1TwLkUuW8s5dGDDz0ehmixptz1pwk0kp26UGFmiu3LHkvfh8IBY-QtUXNw55Q
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjE0NzcwMjEsImlkIjoxMCwicm9sZSI6IlJPTEVfVVNFUiIsInVzZXJuYW1lIjoiKzk5ODk5NTA5MjM3NiIsImV4cCI6MTcyMTgyMjYyMSwiaXNzIjoiRmF5c01hcmtldCJ9.3aGwr2RJN8SOEPAeUJVPUm9WFdSfY9c5fAFv1XXk0lcxlfWWUXSzgvLlQPHSCDNMU2bgCZzVt7jAcf5TXd3e3w
 
 {
-  "productName": "phone",
-  "name": "Mominjon",
-  "surname": "Mominov",
-  "scarf": "Musoyevich",
+  "productName": "laptop",
+  "name": "Alish",
+  "surname": "Alishev",
+  "scarf": "Alishevich",
   "productPrice": 3000000,
   "monthlyPayment": 250000,
   "phone": "+998999476970",

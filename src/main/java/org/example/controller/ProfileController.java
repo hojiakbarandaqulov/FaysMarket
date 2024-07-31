@@ -9,6 +9,7 @@ import org.example.dto.ProfileDTO;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 @Slf4j
 @RequestMapping("/api/v1/profile")
 @RestController

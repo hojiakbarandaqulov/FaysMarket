@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.dto.ApiResponse;
 import org.example.dto.contract.ContractCreateDTO;
 import org.example.dto.contract.ContractResponseDTO;
 import org.example.service.ContractsService;
@@ -21,8 +22,8 @@ public class ContractsController {
 
     @PreAuthorize("hasRole('USER')")
     @PostMapping("/contractCreate")
-    public ResponseEntity<ContractResponseDTO> contractCreate(@RequestBody ContractCreateDTO createDTO) {
-        ContractResponseDTO response = contractsService.create(createDTO);
+    public ResponseEntity<ApiResponse<?>> contractCreate(@RequestBody ContractCreateDTO createDTO) {
+        ApiResponse<?> response = contractsService.create(createDTO);
         return ResponseEntity.ok().body(response);
     }
 }
