@@ -57,6 +57,7 @@ public class SecurityConfig {
                     .requestMatchers("/auth/registration").permitAll()
                     .requestMatchers("/api/v1/authorization/**").permitAll()
                     .requestMatchers("/api/v1/profile/**").permitAll()
+                    .requestMatchers("/api/v1/auth/**").permitAll()
                     .anyRequest()
                     .authenticated();
         });

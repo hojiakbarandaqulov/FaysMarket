@@ -21,9 +21,8 @@ public class SmsService {
     private String myEskizUzPassword;
 
     public void sendSms(String phone) {
-        String code = RandomUtil.getRandomSmsCode();
-        String message = "This is test from Eskiz";
-        send(phone,message);
+        String message = "Bu Eskiz dan test";
+        send(phone, message);
     }
 
     private void send(String phone, String message) {
@@ -88,7 +87,6 @@ public class SmsService {
         }
 
     }
-
 }
 
 
