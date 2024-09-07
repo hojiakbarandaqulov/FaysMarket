@@ -107,7 +107,7 @@ public class AuthorizationService {
     }
 
     public void sendRegistrationPhone(Integer profileId, String phone) {
-        String url = "http://localhost:8080/auth/verification/" + profileId;
+        String url = "http://localhost:8080/api/v1/authorization/verification/" + profileId;
         String text = String.format(RandomUtil.getRandomSmsCode(), url);
         smsHistoryService.crete(phone, text);
         smsService.sendSms(phone);

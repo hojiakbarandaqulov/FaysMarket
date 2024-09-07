@@ -2,6 +2,7 @@ package org.example.service.history;
 
 import org.example.utils.RandomUtil;
 import okhttp3.*;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -21,9 +22,8 @@ public class SmsService {
     private String myEskizUzPassword;
 
     public void sendSms(String phone) {
-        String code = RandomUtil.getRandomSmsCode();
-        String message = "This is test from Eskiz";
-        send(phone,message);
+        String message = "Bu Eskiz dan test";
+        send(phone, message);
     }
 
     private void send(String phone, String message) {
@@ -58,6 +58,42 @@ public class SmsService {
             throw new RuntimeException();
         }
     }
+  /*  private String getToken() {
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
+                .addFormDataPart("email", myEskizUzEmail)
+                .addFormDataPart("password", myEskizUzPassword)
+                .build();
+        Request request = new Request.Builder()
+                .url(smsUrl + "api/v1/authorization/login")
+                .method("POST", body)
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            String responseBody = response.body().string(); // Javobni faqat bir marta o'qib, saqlaymiz
+
+            if (!response.isSuccessful()) {
+                System.err.println("HTTP error code: " + response.code());
+                System.err.println("Error message: " + response.message());
+                throw new IOException("Failed to get token: " + response.code());
+            }
+
+            // JSONni o'qiymiz va parse qilamiz
+            try {
+                JSONObject object = new JSONObject(responseBody);
+                JSONObject data = object.getJSONObject("data");
+                Object token = data.get("token");
+                return token.toString();
+            } catch (JSONException e) {
+                e.printStackTrace();
+                throw new RuntimeException("Failed to parse JSON: " + responseBody);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to execute request", e);
+        }
+    }*/
 
     private String getToken() {
         OkHttpClient client = new OkHttpClient().newBuilder()
@@ -67,7 +103,7 @@ public class SmsService {
                 .addFormDataPart("password", myEskizUzPassword)
                 .build();
         Request request = new Request.Builder()
-                .url(smsUrl + "api/auth/login")
+                .url(smsUrl + "api/v1/authorization/login")
                 .method("POST", body)
                 .build();
 
@@ -88,7 +124,6 @@ public class SmsService {
         }
 
     }
-
 }
 
 

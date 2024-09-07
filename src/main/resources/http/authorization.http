@@ -16,9 +16,11 @@ Content-Type: application/json
   "password": "1234"
 }
 
-### Verification
+### verification
 GET http://localhost:8080/api/v1/authorization/verification/1
 
 ###  registration resend
-GET http://localhost:8080/api/v1/authorization/registration/resend/+998942702363
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjA2MTIxMTEsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwidXNlcm5hbWUiOiIrOTk4OTQyNzAyMzYzIiwiZXhwIjoxNzIwOTU3NzExLCJpc3MiOiJGYXlzTWFya2V0In0.-c7uzefisGjqrNOGmYk-HgsMMxTQSEWELRPGC-k9eCNgj29zRtEdVVfA8Gu7r0F8gEx0p1T-1vvvjWAmhMfkGg
+GET http://localhost:8080/api/v1/authorization/registration/resend/+998995092376
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjU3MTczOTIsImlkIjoxNCwicm9sZSI6IlJPTEVfVVNFUiIsInVzZXJuYW1lIjoiKzk5ODk5NTA5MjM3NiIsImV4cCI6MTcyNjA2Mjk5MiwiaXNzIjoiRmF5c01hcmtldCJ9.peKOeBK8nmQzE7-ypCG8KajUaY1nnAnzkTtGLDsXwE4HDttqIQ2DpJEEvi86C748D0aVR613WWOuhosrFeV2nA
+
+

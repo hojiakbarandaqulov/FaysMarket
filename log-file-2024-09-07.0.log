@@ -1,0 +1,336 @@
+07 Sep 2024 - 18:52:28.936 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 428 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 18:52:28.973 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
+07 Sep 2024 - 18:52:29.832 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 18:52:29.904 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 18:52:30.395 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+07 Sep 2024 - 18:52:30.409 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 18:52:30.409 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 18:52:30.473 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 18:52:30.473 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+07 Sep 2024 - 18:52:30.583 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 18:52:30.670 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 18:52:30.718 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 18:52:31.058 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 18:52:31.091 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 18:52:32.292 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a1cb94
+07 Sep 2024 - 18:52:32.293 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 18:52:34.334 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 18:52:34.777 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:52:34.993 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 18:52:35.582 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 18:52:35.612 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 18:52:35.613 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 18:52:36.228 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+07 Sep 2024 - 18:52:36.239 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 7.694 seconds (process running for 8.305)
+07 Sep 2024 - 18:52:36.544 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.20)
+07 Sep 2024 - 18:52:37.373 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.321s)
+07 Sep 2024 - 18:52:38.186 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 18:52:38.275 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 18:55:14.280 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:55:14.280 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 18:55:14.925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 18:55:18.092 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 3900 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 18:55:18.102 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "prod"
+07 Sep 2024 - 18:55:18.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 18:55:18.875 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 18:55:19.286 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+07 Sep 2024 - 18:55:19.295 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 18:55:19.295 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 18:55:19.349 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 18:55:19.349 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1216 ms
+07 Sep 2024 - 18:55:19.444 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 18:55:19.479 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 18:55:19.502 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 18:55:19.723 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 18:55:19.745 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 18:55:20.538 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71316cd7
+07 Sep 2024 - 18:55:20.540 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 18:55:21.593 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 18:55:22.024 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:55:22.204 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 18:55:22.708 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 18:55:22.739 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 18:55:22.740 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 18:55:23.318 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+07 Sep 2024 - 18:55:23.328 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 5.582 seconds (process running for 6.08)
+07 Sep 2024 - 18:55:23.630 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://45.130.148.130:5432/fays_marketdb (PostgreSQL 12.20)
+07 Sep 2024 - 18:55:24.368 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.247s)
+07 Sep 2024 - 18:55:25.072 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 18:55:25.138 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 18:55:33.469 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:55:33.472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 18:55:34.448 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 18:55:36.301 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 2700 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 18:55:36.312 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 18:55:37.070 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 18:55:37.121 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 18:55:37.549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 18:55:37.557 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 18:55:37.557 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 18:55:37.613 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 18:55:37.613 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1266 ms
+07 Sep 2024 - 18:55:37.724 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 18:55:37.765 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 18:55:37.790 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 18:55:38.004 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 18:55:38.023 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 18:55:38.148 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70ee9d31
+07 Sep 2024 - 18:55:38.150 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 18:55:38.946 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 18:55:39.069 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:55:39.234 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 18:55:39.777 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 18:55:39.812 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 18:55:39.813 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 18:55:40.400 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 18:55:40.408 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.472 seconds (process running for 4.96)
+07 Sep 2024 - 18:55:40.566 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 18:55:40.608 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.024s)
+07 Sep 2024 - 18:55:40.620 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 18:55:40.622 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 18:55:43.024 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 18:55:43.025 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 18:55:43.026 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+07 Sep 2024 - 18:56:09.756 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:56:09.758 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 18:56:09.760 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 18:56:14.102 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 464 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 18:56:14.114 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 18:56:14.902 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 18:56:14.972 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 18:56:15.476 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 18:56:15.486 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 18:56:15.486 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 18:56:15.542 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 18:56:15.542 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1393 ms
+07 Sep 2024 - 18:56:15.657 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 18:56:15.701 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 18:56:15.729 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 18:56:15.975 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 18:56:15.994 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 18:56:16.120 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bdb4f17
+07 Sep 2024 - 18:56:16.121 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 18:56:16.939 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 18:56:16.993 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 18:56:17.191 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 18:56:17.824 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 18:56:17.859 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 18:56:17.861 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 18:56:18.571 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 18:56:18.582 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.852 seconds (process running for 5.329)
+07 Sep 2024 - 18:56:18.724 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 18:56:18.769 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.029s)
+07 Sep 2024 - 18:56:18.783 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 18:56:18.785 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 18:56:32.443 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 18:56:32.443 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 18:56:32.445 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+07 Sep 2024 - 18:58:45.645 [http-nio-8080-exec-7] ERROR o.e.service.AuthorizationService - phone exists
+07 Sep 2024 - 19:01:15.256 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 19:01:15.258 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 19:01:15.261 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 19:01:17.875 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 17152 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 19:01:17.885 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 19:01:18.628 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 19:01:18.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 19:01:19.105 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 19:01:19.114 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 19:01:19.114 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 19:01:19.168 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 19:01:19.169 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
+07 Sep 2024 - 19:01:19.265 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 19:01:19.300 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 19:01:19.323 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 19:01:19.536 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 19:01:19.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 19:01:19.668 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df37f7a
+07 Sep 2024 - 19:01:19.669 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 19:01:20.420 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 19:01:20.466 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 19:01:20.610 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 19:01:21.159 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 19:01:21.189 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 19:01:21.189 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 19:01:21.874 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 19:01:21.884 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.326 seconds (process running for 4.805)
+07 Sep 2024 - 19:01:21.996 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 19:01:22.030 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.021s)
+07 Sep 2024 - 19:01:22.041 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 19:01:22.043 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 19:01:27.615 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 19:01:27.615 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 19:01:27.616 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+07 Sep 2024 - 20:13:00.397 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m40s243ms837µs300ns).
+07 Sep 2024 - 20:20:10.589 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:20:10.591 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 20:20:10.593 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 20:20:14.583 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 11792 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 20:20:14.592 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 20:20:15.400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 20:20:15.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 20:20:15.947 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 20:20:15.956 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 20:20:15.956 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 20:20:16.007 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 20:20:16.008 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1383 ms
+07 Sep 2024 - 20:20:16.100 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 20:20:16.139 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 20:20:16.163 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 20:20:16.385 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 20:20:16.405 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 20:20:16.520 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@794d28a3
+07 Sep 2024 - 20:20:16.522 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 20:20:17.267 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 20:20:17.313 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:20:17.478 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 20:20:18.128 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 20:20:18.165 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 20:20:18.166 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 20:20:18.869 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 20:20:18.874 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.623 seconds (process running for 5.112)
+07 Sep 2024 - 20:20:19.005 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 20:20:19.052 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.032s)
+07 Sep 2024 - 20:20:19.068 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 20:20:19.068 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 20:25:15.321 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:25:15.324 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 20:25:15.329 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 20:25:19.031 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 2240 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 20:25:19.041 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 20:25:19.756 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 20:25:19.807 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 20:25:20.230 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 20:25:20.238 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 20:25:20.238 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 20:25:20.288 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 20:25:20.289 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1213 ms
+07 Sep 2024 - 20:25:20.389 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 20:25:20.426 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 20:25:20.451 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 20:25:20.673 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 20:25:20.694 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 20:25:20.816 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ec082a1
+07 Sep 2024 - 20:25:20.817 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 20:25:21.629 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 20:25:21.686 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:25:21.867 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 20:25:22.381 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 20:25:22.409 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 20:25:22.410 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 20:25:23.025 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 20:25:23.036 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.333 seconds (process running for 4.804)
+07 Sep 2024 - 20:25:23.163 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 20:25:23.205 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.025s)
+07 Sep 2024 - 20:25:23.216 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 20:25:23.219 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 20:25:48.614 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 20:25:48.615 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 20:25:48.616 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+07 Sep 2024 - 20:26:37.979 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:26:37.981 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 20:26:37.985 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 20:26:42.741 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 18268 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 20:26:42.752 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 20:26:43.516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 20:26:43.570 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 20:26:43.998 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 20:26:44.008 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 20:26:44.008 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 20:26:44.057 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 20:26:44.058 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1272 ms
+07 Sep 2024 - 20:26:44.169 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 20:26:44.214 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 20:26:44.242 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 20:26:44.493 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 20:26:44.516 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 20:26:44.636 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60a4e619
+07 Sep 2024 - 20:26:44.637 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 20:26:45.457 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 20:26:45.546 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:26:45.761 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 20:26:46.290 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 20:26:46.330 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 20:26:46.330 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 20:26:47.024 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 20:26:47.039 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.645 seconds (process running for 5.139)
+07 Sep 2024 - 20:26:47.193 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 20:26:47.241 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.030s)
+07 Sep 2024 - 20:26:47.254 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 20:26:47.256 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 20:26:50.460 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 20:26:50.460 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 20:26:50.462 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+07 Sep 2024 - 20:26:50.558 [http-nio-8080-exec-1] ERROR o.e.service.AuthorizationService - Registration not completed
+07 Sep 2024 - 20:26:58.005 [http-nio-8080-exec-2] ERROR o.e.service.AuthorizationService - Registration not completed
+07 Sep 2024 - 20:27:00.315 [http-nio-8080-exec-4] ERROR o.e.service.AuthorizationService - Registration not completed
+07 Sep 2024 - 20:27:03.982 [http-nio-8080-exec-10] ERROR o.e.service.AuthorizationService - Registration not completed
+07 Sep 2024 - 20:29:56.044 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:29:56.046 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 20:29:56.048 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 20:29:58.866 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 19208 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 20:29:58.877 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 20:29:59.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 20:29:59.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 20:30:00.051 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 20:30:00.060 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 20:30:00.060 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 20:30:00.109 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 20:30:00.110 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1200 ms
+07 Sep 2024 - 20:30:00.203 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 20:30:00.238 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 20:30:00.259 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 20:30:00.485 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 20:30:00.504 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 20:30:00.616 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60a4e619
+07 Sep 2024 - 20:30:00.617 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 20:30:01.382 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 20:30:01.434 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:30:01.613 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 20:30:02.133 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 20:30:02.169 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 20:30:02.171 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 20:30:02.790 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 20:30:02.799 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.235 seconds (process running for 4.721)
+07 Sep 2024 - 20:30:02.905 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 20:30:02.946 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.027s)
+07 Sep 2024 - 20:30:02.957 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 20:30:02.959 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 20:30:07.217 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 20:30:07.217 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 20:30:07.219 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+07 Sep 2024 - 20:30:07.371 [http-nio-8080-exec-1] ERROR o.e.service.AuthorizationService - phone exists
+07 Sep 2024 - 20:30:32.914 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:30:32.916 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07 Sep 2024 - 20:30:32.923 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07 Sep 2024 - 20:30:36.063 [main] INFO  org.example.FaysMarketApplication - Starting FaysMarketApplication using Java 17.0.10 with PID 13756 (D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket\target\classes started by Hp victus in D:\Code_uz\Hojiakbar\JDBC_Spring_Project\Sppring\FaysMarket)
+07 Sep 2024 - 20:30:36.076 [main] INFO  org.example.FaysMarketApplication - The following 1 profile is active: "dev"
+07 Sep 2024 - 20:30:36.791 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07 Sep 2024 - 20:30:36.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+07 Sep 2024 - 20:30:37.257 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+07 Sep 2024 - 20:30:37.265 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07 Sep 2024 - 20:30:37.265 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+07 Sep 2024 - 20:30:37.316 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07 Sep 2024 - 20:30:37.317 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1204 ms
+07 Sep 2024 - 20:30:37.409 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+07 Sep 2024 - 20:30:37.442 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+07 Sep 2024 - 20:30:37.465 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+07 Sep 2024 - 20:30:37.685 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+07 Sep 2024 - 20:30:37.705 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07 Sep 2024 - 20:30:37.816 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@135064ea
+07 Sep 2024 - 20:30:37.817 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07 Sep 2024 - 20:30:38.549 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+07 Sep 2024 - 20:30:38.607 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07 Sep 2024 - 20:30:38.765 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+07 Sep 2024 - 20:30:39.298 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07 Sep 2024 - 20:30:39.327 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+07 Sep 2024 - 20:30:39.327 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+07 Sep 2024 - 20:30:39.873 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+07 Sep 2024 - 20:30:39.882 [main] INFO  org.example.FaysMarketApplication - Started FaysMarketApplication in 4.149 seconds (process running for 4.649)
+07 Sep 2024 - 20:30:40.003 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/FaysMarket (PostgreSQL 14.11)
+07 Sep 2024 - 20:30:40.044 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.025s)
+07 Sep 2024 - 20:30:40.057 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+07 Sep 2024 - 20:30:40.059 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+07 Sep 2024 - 20:30:45.416 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07 Sep 2024 - 20:30:45.417 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07 Sep 2024 - 20:30:45.417 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+07 Sep 2024 - 20:37:41.529 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m33s548ms916µs600ns).
